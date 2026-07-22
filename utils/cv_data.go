@@ -8,8 +8,8 @@ var CVData = model.PageData{
 		Title:    "Self-taught Developer · RHCSA · Flutter - Golang Developer · IT Engineer",
 		Company:  "Almadar Aljadid",
 		Location: "Benghazi, Libya",
-		Bio: `Self-taught developer and IT engineer with a passion for building clean, maintainable software. RHCSA certified with hands-on experience in Linux system administration, containerization, and full-stack development. Working in IT Technical Support at Almadar Aljadid has not stopped me from continuously learning and building with modern technologies from Flutter and Golang to Docker, Kubernetes, and beyond.`,
-		Photo: "assets/images/mnb.jpg",
+		Bio:      `Self-taught developer and IT engineer with a passion for building clean, maintainable software. RHCSA certified with hands-on experience in Linux system administration, containerization, and full-stack development. Working in IT Technical Support at Almadar Aljadid has not stopped me from continuously learning and building with modern technologies from Flutter and Golang to Docker, Kubernetes, and beyond.`,
+		Photo:    "assets/images/mnb.jpg",
 		Links: []model.Link{
 			{Label: "Email", URL: "mailto:mnbenghuzzi@gmail.com"},
 			{Label: "Phone", URL: "tel:0925566287"},
@@ -34,7 +34,7 @@ var CVData = model.PageData{
 	Skills: []model.SkillGroup{
 		{
 			Category: "Infrastructure & DevOps",
-			Items:    []string{"Linux", "Docker", "Kubernetes", "Virtualization"},
+			Items:    []string{"Linux", "Docker", "Kubernetes", "Virtualization", "IoT"},
 		},
 		{
 			Category: "Languages & Frameworks",
@@ -54,7 +54,7 @@ var CVData = model.PageData{
 		},
 		{
 			Category: "Traits",
-			Items:    []string{"Problem Solver", "Quick Learner", "Embraces Challenges", "IoT"},
+			Items:    []string{"Problem Solver", "Quick Learner", "Embraces Challenges"},
 		},
 	},
 
