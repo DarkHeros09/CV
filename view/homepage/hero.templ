@@ -11,6 +11,8 @@ templ Hero(p model.Profile) {
 						src={ p.Photo }
 						alt={ p.Name }
 						class="w-32 sm:w-36 h-auto rounded-md border border-border"
+						fetchpriority="high"
+						loading="eager"
 					/>
 				</div>
 			}
