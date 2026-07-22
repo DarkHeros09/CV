@@ -11,7 +11,7 @@ var CVData = model.PageData{
 		Bio: `Self-taught developer and IT engineer with a passion for building clean, maintainable software. 
 RHCSA certified with hands-on experience in Linux system administration, containerization, and full-stack development. 
 Working in IT Technical Support at Almadar Aljadid has not stopped me from continuously learning and building with modern technologies from Flutter and Golang to Docker, Kubernetes, and beyond.`,
-		Photo: "/assets/images/mnb.jpg",
+		Photo: "assets/images/mnb.jpg",
 		Links: []model.Link{
 			{Label: "Email", URL: "mailto:mnbenghuzzi@gmail.com"},
 			{Label: "Phone", URL: "tel:0925566287"},
@@ -65,7 +65,7 @@ Working in IT Technical Support at Almadar Aljadid has not stopped me from conti
 			Institution: "Red Hat, Inc.",
 			Degree:      "Red Hat Certified System Administrator (RHCSA)",
 			Year:        "2019",
-			Image:       "/assets/images/redhat_cert.png",
+			Image:       "assets/images/redhat_cert.png",
 			VerifyURL:   "https://rhtapps.redhat.com/verify?certId=190-192-609",
 		},
 	},
