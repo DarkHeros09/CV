@@ -1,0 +1,18 @@
+package layout
+
+import "cv-website/model"
+
+templ Footer(data model.PageData) {
+	<footer class="border-t border-border mt-16">
+		<div class="max-w-3xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+			<div class="font-mono">
+				<span class="text-accent mr-1">~</span>
+				{ data.Year + " " + data.Profile.Name }
+			</div>
+			<div class="font-mono text-xs">
+				Built with Go · Templ · UnoCSS · Alpine.js
+			</div>
+		</div>
+		@HostedOn()
+	</footer>
+}

@@ -1,0 +1,81 @@
+package homepage
+
+import "cv-website/model"
+
+templ EducationSection(edu []model.Education) {
+	<section id="education" class="section-container py-12">
+		<div class="section-heading">
+			<span class="text-accent">{ ">" }</span>
+			<h2 class="font-mono text-lg font-semibold text-foreground">education</h2>
+			<div class="section-heading-line"></div>
+		</div>
+		<div class="space-y-6">
+			for _, e := range edu {
+				<div class="card-base flex flex-col sm:flex-row gap-6 items-start">
+					if e.Image != "" {
+						<div class="shrink-0">
+							<div x-data="{ open: false }" class="relative">
+								<button
+									@click="open = true"
+									class="block rounded-md border border-border overflow-hidden cursor-zoom-in hover:border-accent/60 transition-colors"
+								>
+									<img
+										src={ e.Image }
+										alt={ e.Degree }
+										class="w-48 block"
+									/>
+								</button>
+								<div
+									x-show="open"
+									x-cloak
+									x-transition.opacity
+									class="fixed inset-0 z-200 flex items-center justify-center bg-black/70 p-4"
+									@click.self="open = false"
+									@keydown.escape.window="open = false"
+								>
+									<button
+										@click="open = false"
+										class="absolute top-4 right-4 p-2 text-white/70 hover:text-white transition-colors"
+										aria-label="Close"
+									>
+										<svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+											<path d="M18 6L6 18"/><path d="M6 6l12 12"/>
+										</svg>
+									</button>
+									<img
+										src={ e.Image }
+										alt={ e.Degree }
+										class="max-w-full max-h-[90vh] rounded-md"
+									/>
+								</div>
+							</div>
+						</div>
+					}
+					<div class="flex flex-col gap-3">
+						<div>
+							<div class="flex items-center gap-2 mb-1">
+								<svg class="w-5 h-5 text-accent" viewBox="0 0 24 24" fill="currentColor">
+									<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+								</svg>
+								<span class="text-sm font-mono text-muted-foreground uppercase tracking-wider">Red Hat</span>
+							</div>
+							<h3 class="font-semibold text-foreground">{ e.Degree }</h3>
+							<p class="text-sm text-muted-foreground">{ e.Institution }</p>
+						</div>
+						if e.VerifyURL != "" {
+							<a
+								href={ e.VerifyURL }
+								target="_blank"
+								rel="noopener noreferrer"
+								class="link text-base font-mono inline-flex items-center gap-1"
+							>
+								<span>{ "→" }</span>
+								<span>Verify credential</span>
+							</a>
+						}
+					</div>
+				</div>
+			}
+		</div>
+	</section>
+}

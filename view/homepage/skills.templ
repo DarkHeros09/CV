@@ -1,0 +1,27 @@
+package homepage
+
+import "cv-website/model"
+
+templ SkillsSection(skills []model.SkillGroup) {
+	<section id="skills" class="section-container py-12">
+		<div class="section-heading">
+			<span class="text-accent">{ ">" }</span>
+			<h2 class="font-mono text-lg font-semibold text-foreground">skills</h2>
+			<div class="section-heading-line"></div>
+		</div>
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+			for _, group := range skills {
+				<div class="skill-card">
+					<h3 class="font-mono text-sm text-accent mb-3 uppercase tracking-wider">
+						{ group.Category }
+					</h3>
+					<div class="flex flex-wrap gap-2">
+						for _, item := range group.Items {
+							<span class="badge">{ item }</span>
+						}
+					</div>
+				</div>
+			}
+		</div>
+	</section>
+}

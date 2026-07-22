@@ -1,0 +1,35 @@
+package layout
+
+import "cv-website/model"
+
+templ Base(data model.PageData) {
+	<!DOCTYPE html>
+	<html lang="en" x-data="{ isDark: window.matchMedia('(prefers-color-scheme: dark)').matches }"
+		:class="{ 'dark': isDark }"
+		x-effect="document.documentElement.classList.toggle('dark', isDark); localStorage.setItem('theme', isDark ? 'dark' : 'light')"
+		x-init="isDark = localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)">
+		@Header(data.Profile)
+		<body class="body-base min-h-screen">
+			@NavBar()
+			<main>
+				{ children... }
+			</main>
+			@Footer(data)
+		</body>
+	</html>
+}
+
+templ NavBar() {
+	<nav class="nav-bar" x-cloak>
+		<div class="nav-inner">
+			<a href="#" class="font-mono text-accent font-bold text-lg no-underline">~mnb</a>
+			<div class="flex items-center gap-4">
+				<a href="#about" class="text-sm text-muted-foreground hover:text-foreground transition-colors no-underline font-mono hidden sm:inline">about</a>
+				<a href="#experience" class="text-sm text-muted-foreground hover:text-foreground transition-colors no-underline font-mono hidden sm:inline">experience</a>
+				<a href="#skills" class="text-sm text-muted-foreground hover:text-foreground transition-colors no-underline font-mono hidden sm:inline">skills</a>
+				<a href="#education" class="text-sm text-muted-foreground hover:text-foreground transition-colors no-underline font-mono hidden sm:inline">education</a>
+				@ThemeButton()
+			</div>
+		</div>
+	</nav>
+}

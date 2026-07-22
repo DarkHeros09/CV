@@ -1,0 +1,16 @@
+package homepage
+
+import (
+	"cv-website/model"
+	"cv-website/view/layout"
+)
+
+templ Show(data model.PageData) {
+	@layout.Base(data) {
+		@Hero(data.Profile)
+		@About(data.Profile.Bio)
+		@ExperienceSection(data.Experience)
+		@SkillsSection(data.Skills)
+		@EducationSection(data.Education)
+	}
+}
