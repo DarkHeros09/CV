@@ -85,7 +85,6 @@
 .hidden{display:none;}
 .h-4{height:1rem;}
 .h-5{height:1.25rem;}
-.h-6{height:1.5rem;}
 .h-8{height:2rem;}
 .h-auto{height:auto;}
 .max-h-\[90vh\]{max-height:90vh;}
@@ -98,7 +97,6 @@
 .w-4{width:1rem;}
 .w-48{width:12rem;}
 .w-5{width:1.25rem;}
-.w-6{width:1.5rem;}
 .w-8{width:2rem;}
 .flex{display:flex;}
 .inline-flex{display:inline-flex;}
