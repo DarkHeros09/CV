@@ -72,6 +72,8 @@
 .z-200{z-index:200;}
 .grid{display:grid;}
 .grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr));}
+.m128{margin:32rem;}
+.m202\.357{margin:50.58925rem;}
 .mx-auto{margin-left:auto;margin-right:auto;}
 .mb-1{margin-bottom:0.25rem;}
 .mb-3{margin-bottom:0.75rem;}
@@ -82,6 +84,8 @@
 .block{display:block;}
 .hidden{display:none;}
 .h-4{height:1rem;}
+.h-5{height:1.25rem;}
+.h-6{height:1.5rem;}
 .h-8{height:2rem;}
 .h-auto{height:auto;}
 .max-h-\[90vh\]{max-height:90vh;}
@@ -94,6 +98,7 @@
 .w-4{width:1rem;}
 .w-48{width:12rem;}
 .w-5{width:1.25rem;}
+.w-6{width:1.5rem;}
 .w-8{width:2rem;}
 .flex{display:flex;}
 .inline-flex{display:inline-flex;}
