@@ -50,7 +50,7 @@ var CVData = model.PageData{
 		},
 		{
 			Category: "Design",
-			Items:    []string{"Figma", "Adobe XD"},
+			Items:    []string{"Figma"},
 		},
 		{
 			Category: "Traits",
