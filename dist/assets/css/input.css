@@ -73,6 +73,7 @@
 .grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr));}
 .m128{margin:32rem;}
 .m202\.357{margin:50.58925rem;}
+.m22{margin:5.5rem;}
 .mx-auto{margin-left:auto;margin-right:auto;}
 .mb-1{margin-bottom:0.25rem;}
 .mb-3{margin-bottom:0.75rem;}
