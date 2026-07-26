@@ -26,10 +26,18 @@ var CVData = model.PageData{
 			Highlights: []string{
 				"Provide IT infrastructure and technical support across the organization",
 				"Manage and troubleshoot Active Directory, MDT deployments, Linux-based systems, and network services",
+				"Support end-users and maintain IT operations for critical business functions",
+			},
+		},
+		{
+			Company: "Independent",
+			Role:    "Side Projects & Self-Initiated Work",
+			Start:   "",
+			End:     "",
+			Highlights: []string{
 				"Linux server system administrator, enforcing strong security policies",
 				"Hosting internal and external websites, ensuring availability and performance",
-				"Develop mobile applications as a side interest, bridging IT operations with software engineering",
-				"Support end-users and maintain IT operations for critical business functions",
+				"Develop mobile applications, bridging IT operations with software engineering",
 			},
 		},
 	},
