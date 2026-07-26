@@ -68,12 +68,14 @@ export default defineConfig({
 
         html {
           scroll-behavior: smooth;
-          transition: color 0.2s, background-color 0.2s;
         }
 
         body {
           font-size: 1.0625rem;
-          transition: color 0.2s, background-color 0.2s;
+        }
+
+        body, body * {
+          transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
         }
 
         ::selection {

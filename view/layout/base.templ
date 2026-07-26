@@ -5,7 +5,6 @@ import "cv-website/model"
 templ Base(data model.PageData) {
 	<!DOCTYPE html>
 	<html lang="en" x-data="{ isDark: window.matchMedia('(prefers-color-scheme: dark)').matches }"
-		:class="{ 'dark': isDark }"
 		x-effect="document.documentElement.classList.toggle('dark', isDark); localStorage.setItem('theme', isDark ? 'dark' : 'light')"
 		x-init="isDark = localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)">
 		@Header(data.Profile)
