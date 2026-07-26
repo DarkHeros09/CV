@@ -4,8 +4,6 @@ export default defineConfig({
   presets: [presetMini({ dark: 'class' })],
 
   theme: {
-    fontFamily: {
-    },
     colors: {
       background: 'var(--bg)',
       foreground: 'var(--fg)',
