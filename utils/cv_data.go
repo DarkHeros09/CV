@@ -26,6 +26,9 @@ var CVData = model.PageData{
 			Highlights: []string{
 				"Provide IT infrastructure and technical support across the organization",
 				"Manage and troubleshoot Active Directory, MDT deployments, Linux-based systems, and network services",
+				"Linux server system administrator, enforcing strong security policies",
+				"Hosting internal and external websites, ensuring availability and performance",
+				"Develop mobile applications as a side interest, bridging IT operations with software engineering",
 				"Support end-users and maintain IT operations for critical business functions",
 			},
 		},
@@ -65,6 +68,20 @@ var CVData = model.PageData{
 			Year:        "2019",
 			Image:       "assets/images/redhat_cert.png",
 			VerifyURL:   "https://rhtapps.redhat.com/verify?certId=190-192-609",
+		},
+		{
+			Institution: "Huawei Technologies",
+			Degree:      "NFVI Technology and Administration Training",
+			Year:        "",
+			Image:       "assets/images/huawei_nfvi_training.png",
+			VerifyURL:   "",
+		},
+		{
+			Institution: "AXELOS / PeopleCert",
+			Degree:      "ITIL 4 Foundation — Scored 100%",
+			Year:        "",
+			Image:       "assets/images/itilv4_score.png",
+			VerifyURL:   "",
 		},
 	},
 }
