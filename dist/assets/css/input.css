@@ -49,6 +49,7 @@
         }
 
         [x-cloak] { display: none !important; }
+        svg { color: inherit; }
       
 /* layer: shortcuts */
 .nav-bar{position:fixed;top:0;left:0;right:0;z-index:100;border-bottom-width:1px;border-color:var(--border);background-color:var(--bg) /* var(--bg) */;}

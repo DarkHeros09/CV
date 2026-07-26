@@ -84,6 +84,7 @@ export default defineConfig({
         }
 
         [x-cloak] { display: none !important; }
+        svg { color: inherit; }
       `,
     },
   ],
