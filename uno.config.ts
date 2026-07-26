@@ -84,6 +84,8 @@ export default defineConfig({
         }
 
         [x-cloak] { display: none !important; }
+        html:not(.dark) .show-dark { display: none; }
+        html.dark .show-light { display: none; }
         svg { color: inherit; }
       `,
     },
