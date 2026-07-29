@@ -49,7 +49,7 @@ var CVData = model.PageData{
 		},
 		{
 			Category: "Languages & Frameworks",
-			Items:    []string{"Flutter", "Golang", "PowerShell", "Frontend Development", "Backend Development"},
+			Items:    []string{"Flutter", "Golang", "PowerShell", "Bash", "Frontend Development", "Backend Development", "Mobile Development"},
 		},
 		{
 			Category: "Databases & Data",

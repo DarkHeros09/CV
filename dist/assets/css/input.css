@@ -143,6 +143,7 @@
 .py-8{padding-top:2rem;padding-bottom:2rem;}
 .pb-12{padding-bottom:3rem;}
 .pt-24{padding-top:6rem;}
+.text-pretty{text-wrap:pretty;}
 .text-2xl{font-size:1.5rem;line-height:2rem;}
 .text-base{font-size:1rem;line-height:1.5rem;}
 .text-lg{font-size:1.125rem;line-height:1.75rem;}

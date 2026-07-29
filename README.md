@@ -1,20 +1,20 @@
-# CV Website
+# 📄 CV Website
 
 Personal CV / portfolio website for **Mohammed Najib Benghuzzi**.
 
-Built with **Go · Templ · UnoCSS · Alpine.js**, deployed via [GitHub Pages](https://mnbenghuzzi.github.io).
+🔗 [mnb-cv.ly](https://mnb-cv.ly) — Built with **Go · Templ · UnoCSS · Alpine.js**, deployed via [GitHub Pages](https://mnbenghuzzi.github.io).
 
-## Tech Stack
+## 🛠 Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
-| Server | Go 1.26 + [Fiber v3](https://docs.gofiber.io/) |
-| Templates | [Templ](https://templ.guide/) — type-safe HTML templating |
-| CSS | [UnoCSS](https://unocss.dev/) — atomic CSS from `.templ` files |
-| Interactivity | [Alpine.js](https://alpinejs.dev/) — light/dark mode, cert modal |
-| Dev Server | [Air](https://github.com/air-verse/air) — live reload |
+| Server | 🐹 Go 1.26 + [Fiber v3](https://docs.gofiber.io/) |
+| Templates | 📝 [Templ](https://templ.guide/) — type-safe HTML templating |
+| CSS | 🎨 [UnoCSS](https://unocss.dev/) — atomic CSS from `.templ` files |
+| Interactivity | ⚡ [Alpine.js](https://alpinejs.dev/) — light/dark mode, cert modal |
+| Dev Server | 🔄 [Air](https://github.com/air-verse/air) — live reload |
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 cv/
@@ -39,7 +39,7 @@ cv/
 └── .github/workflows/       # CI → deploy dist/ to GitHub Pages
 ```
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -57,6 +57,8 @@ This installs Go dependencies (`go mod tidy`) and global tools:
 - `templ` — Templ template compiler
 - `unocss` — UnoCSS CLI
 - `air` — Live reload server
+
+For a fresh clone, use `make setup` to create the project structure + install everything.
 
 ### Development
 
@@ -99,7 +101,7 @@ make clean
 
 Removes `tmp/` and `dist/` directories.
 
-## Deployment
+## 🚢 Deployment
 
 The site is deployed to **GitHub Pages** via GitHub Actions (`.github/workflows/static.yml`).
 
@@ -109,7 +111,7 @@ On push to `main`, the workflow:
 3. Runs `go run ./cmd/generate` → produces `dist/`
 4. Uploads `dist/` to GitHub Pages
 
-## Customizing
+## ✏️ Customizing
 
 ### Edit CV Content
 
@@ -130,6 +132,6 @@ All personal data lives in `utils/cv_data.go`:
 
 Edit CSS custom properties in `uno.config.ts` → `preflights` for light/dark color schemes.
 
-## License
+## 📜 License
 
 MIT
