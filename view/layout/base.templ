@@ -5,7 +5,7 @@ import "cv-website/model"
 templ Base(data model.PageData) {
 	<!DOCTYPE html>
 	<html lang="en" x-data="{ isDark: document.documentElement.classList.contains('dark') }"
-		x-effect="document.documentElement.classList.toggle('dark', isDark); localStorage.setItem('theme', isDark ? 'dark' : 'light')"
+		x-effect="isDark ? document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark'); localStorage.setItem('theme', isDark ? 'dark' : 'light')"
 		x-init="isDark = localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches">
 		@Header(data.Profile)
 		<body class="body-base min-h-screen">
